@@ -20,7 +20,7 @@ model Post {
 }
 
 model User {
-    id           String  @unique @default(cuid())
+    id           String  @id @default(cuid())
     emailAddress String  @unique
     firstName    String
     lastName     String
